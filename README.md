@@ -71,19 +71,15 @@ Create three output arrays
 
           tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
              If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i - 1, 1).Value <> tickers(tickerIndex) Then
-              tickerStartingPrices(tickerIndex) = Cells (i, 6).Value
-             
+              tickerStartingPrices(tickerIndex) = Cells (i, 6).Value      
        End If
-
              If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
         	    tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
-       End If
-            
+       End If           
         	   If Cells(i + 1, 1).Value <> Cells(i, 1).Value Then
-        	    tickerIndex = tickerIndex + 1
-              
+        	    tickerIndex = tickerIndex + 1          
        End If
-    
+       
        Next i
 
 4. Loop through arrays to output the Ticker, Total Daily Volume, and Return.
