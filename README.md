@@ -8,7 +8,7 @@ The purpose of this stock analysis is to help the client analyze an entire datas
 #### Compared Stock Performance between 2017 and 2018  
 In 2018, “DQ” underperformed at -62.6% along with nine other green energy stocks. Only “ENPH” and “RUN” had positive returns.  
 
-![resources/All_Stocks_Analysis _2018.png](resources/All_Stocks_Analysis _2018.png)
+![resources/All_Stocks_Analysis_2018.png](resources/All_Stocks_Analysis_2018.png)
 ###### *Refactored VBA “All Stock Analysis” (2018) 
 
 
