@@ -6,13 +6,13 @@ The purpose of this stock analysis is to help the client analyze an entire datas
 ## VBA Analysis Results
 
 #### Compared Stock Performance between 2017 and 2018  
-In 2018, “DQ” underperformed at -62.6% along with nine other green energy stocks. Only “ENPH” and “RUN” had positive returns.  
+In 2018, “DQ” underperformed at -62.6%. Only “ENPH” and “RUN” had positive returns.  
 
 ![resources/All_Stocks_Analysis_2018.png](resources/All_Stocks_Analysis_2018.png) 
 ###### *Refactored VBA “All Stock Analysis” (2018) 
 
 
-In 2017, “DQ” had a positive return at 199.4%, the highest yearly return of all stocks. ENPH and RUN shows positive return and high daily volume count in 2017 and 2018.  
+In 2017, “DQ” had a positive return at 199.4%, the highest yearly return of all stocks. However, ENPH and RUN shows positive returns and high daily volumes in 2017 and 2018.  
 
 ![resources/All_Stocks_Analysis_2017.png](resources/All_Stocks_Analysis_2017.png)
 ###### *Refactored VBA “All Stock Analysis” (2017)
