@@ -8,15 +8,19 @@ The purpose of this stock analysis is to help the client analyze an entire datas
 #### Compared Stock Performance between 2017 and 2018  
 In 2018, “DQ” underperformed at -62.6% along with nine with green energy stocks. Only “ENPH” and “RUN” had positive Returns.  
 
+![GitHub Logo](/images/logo.png)
 ###### *Refactored VBA “All Stock Analysis” (2018) 
 
 In 2017, “DQ” had a positive return at 199.4%, the highest Yearly Return of all stocks. ENPH and RUN shows positive return and high daily volume count in 2017 and 2018.  
 
+![GitHub Logo](/images/logo.png)
 ###### *Refactored VBA “All Stock Analysis” (2017)
 
 #### Compared VBA Stock Performance Execution Times 
 The refactor code outputs ran faster than the original VBA code as captured in the timer message box below. The first time you run a macro, the elapsed time may be longer than subsequent runs because computer resources need to be allocated to run the macro. Once allocated, these resources are ready for subsequent runs. 
 
+![GitHub Logo](/images/logo.png) ![GitHub Logo](/images/logo.png)
+![GitHub Logo](/images/logo.png) ![GitHub Logo](/images/logo.png)
 ***Original VBA Code 
 
 #### Refactored VBA Script
