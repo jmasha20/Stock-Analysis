@@ -21,7 +21,7 @@ The refactor code outputs ran faster than the original VBA code as captured in t
 
 ###### *Original VBA Code Run
 
-![VBA_Challenge_2018. (Original)](resources/VBA_Challenge_2018.(Original).png)    
+![VBA_Challenge_2018.(Original).png](resources/VBA_Challenge_2018.(Original).png)    
 
 ![GitHub Logo](/images/logo.png)
 
