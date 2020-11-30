@@ -19,11 +19,9 @@ In 2017, “DQ” had a positive return at 199.4%, the highest Yearly Return of 
 #### Compared VBA Stock Performance Execution Times 
 The refactor code outputs ran faster than the original VBA code as captured in the timer message box below. The first time you run a macro, the elapsed time may be longer than subsequent runs because computer resources need to be allocated to run the macro. Once allocated, these resources are ready for subsequent runs. 
 
-###### *Original VBA Code Run
+###### *Original VBA Code Run  
 
-![VBA_Challenge_2018.(Original).png](resources/VBA_Challenge_2018.(Original).png)    
-
-![GitHub Logo](/images/logo.png)
+![resources/Original_VBA_Challenge_2018.png](resources/Original_VBA_Challenge_2018.png)
 
 ###### *Refactored VBA Code Run
 
