@@ -33,17 +33,17 @@ The “Compared Stock Performance between 2017 and 2018” was refactor in VBA u
 ##### Refactored VBA Script Design 
 
 Format the output sheet on the "All Stocks Analysis" worksheet.
-              Dim startTime As Single
-              Dim endTime  As Single
+     Dim startTime As Single
+     Dim endTime  As Single
 
-                     yearValue = InputBox("What year would you like to run the analysis on?")
-                     'Start timer after year is entered
-                     startTime = Timer 
+       yearValue = InputBox("What year would you like to run the analysis on?")
+       'Start timer after year is entered
+        startTime = Timer 
 
 Format the output sheet on All Stocks Analysis worksheet
-                     Worksheets("All Stocks Analysis").Activate
-                     Range("A1").Value = "All Stocks (" + yearValue + ")"
-
+       Worksheets("All Stocks Analysis").Activate
+       Range("A1").Value = "All Stocks (" + yearValue + ")
+           
 Initialize an array of all tickers.
 
 Prepare for the analysis of tickers.
@@ -51,44 +51,48 @@ a.	Activate the (yearValue) worksheet.
 b.	Get the number of rows to loop over
 
 1. Create a ticker Index, three output arrays and a for loop to initialize the tickerVolumes to zero.
-                     tickerIndex = 0
+       tickerIndex = 0
 
 Create three output arrays
-                     Dim tickerVolumes(12) As Long
-                     Dim tickerStartingPrices(12) As Single
-                     Dim tickerEndingPrices(12) As Single
+       Dim tickerVolumes(12) As Long
+       Dim tickerStartingPrices(12) As Single
+       Dim tickerEndingPrices(12) As Single
 
 2. Create a loop to initialize the tickerVolumes to zero and loop over all the rows in the spreadsheet.
-                     For i = 0 To 11
-       	       TickerVolumes (i) = 0
+         For i = 0 To 11
+       	 TickerVolumes (i) = 0
 
-       Next i
-    	              Worksheets(yearValue).Activate
-   	              For i = 2 To RowCount
+        Next i
+        
+    	    Worksheets(yearValue).Activate
+   	      For i = 2 To RowCount
 
 3. Increase volume for current ticker. Check if the current row is the first row with the selected tickerIndex and check if the current row is the last row with the selected ticker. If the next row’s ticker doesn’t match, increase the tickerIndex    
 
-                     tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
-                            If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i - 1, 1).Value <> tickers(tickerIndex) Then
-                            tickerStartingPrices(tickerIndex) = Cells (i, 6).Value
+          tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
+             If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i - 1, 1).Value <> tickers(tickerIndex) Then
+              tickerStartingPrices(tickerIndex) = Cells (i, 6).Value
+             
        End If
 
-                            If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
-        	              tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
+             If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
+        	    tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
        End If
             
-        	              If Cells(i + 1, 1).Value <> Cells(i, 1).Value Then
-        	              tickerIndex = tickerIndex + 1
+        	   If Cells(i + 1, 1).Value <> Cells(i, 1).Value Then
+        	    tickerIndex = tickerIndex + 1
+              
        End If
     
        Next i
 
 4. Loop through arrays to output the Ticker, Total Daily Volume, and Return.
-                     For i = 0 To 11
-                     Worksheets("All Stocks Analysis").Activate
-       	       Cells(4 + i, 1).Value = tickers(i)
-     	              Cells(4 + i, 2).Value = tickerVolumes(i)
-        	       Cells (4 + i, 3).Value = tickerEndingPrices(i) / tickerStartingPrices(i) - 1
+          For i = 0 To 11
+            Worksheets("All Stocks Analysis").Activate
+       	    Cells(4 + i, 1).Value = tickers(i)
+     	      Cells(4 + i, 2).Value = tickerVolumes(i)
+        	  Cells (4 + i, 3).Value = tickerEndingPrices(i) / tickerStartingPrices(i) - 1
+            
        Next i
 
        Formatting
